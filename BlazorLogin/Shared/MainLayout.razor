@@ -9,13 +9,12 @@
         <AuthorizeView>
             <Authorized>
                 Hello, @context.User.Identity.Name!
-                <a href="LogOut">Log out</a>
+                <a href="/.auth/logout?post_logout_redirect_uri=/">Log out</a>
             </Authorized>
             <NotAuthorized>
-                <a href="login-providers">Log in</a>
+                <a href="/login-providers">Log in</a>
             </NotAuthorized>
         </AuthorizeView>
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">Aboutt</a>
     </div>
 
     <div class="content px-4">
