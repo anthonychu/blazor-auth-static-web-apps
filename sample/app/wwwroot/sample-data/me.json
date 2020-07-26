@@ -1,5 +1,5 @@
 {
-  "xclientPrincipal": {
+  "clientPrincipal": {
     "identityProvider": "github",
     "userId": "test123",
     "userDetails": "anthony",
