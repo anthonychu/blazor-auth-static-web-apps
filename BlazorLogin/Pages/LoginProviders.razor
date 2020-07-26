@@ -1,0 +1,12 @@
+@page "/login-providers"
+@inject NavigationManager navigationManager
+
+<h1>Login</h1>
+
+<button class="btn btn-dark" @onclick="SignInWithGitHub"><i class="fa fa-github" aria-hidden="true"></i> Log in with GitHub</button>
+
+@code {
+    public void SignInWithGitHub() {
+        navigationManager.NavigateTo("/.auth/login/github", forceLoad: true);
+    }
+}
