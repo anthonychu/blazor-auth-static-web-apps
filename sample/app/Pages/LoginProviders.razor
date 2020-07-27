@@ -1,12 +1,25 @@
 @page "/login-providers"
-@inject NavigationManager navigationManager
+
+@{
+    var providers = new Dictionary<string, string>
+    {
+        { "github", "GitHub" }, 
+        { "twitter", "Twitter" },
+        { "facebook", "Facebook" }
+    };
+}
 
 <h1>Login</h1>
 
-<button class="btn btn-dark" @onclick="SignInWithGitHub"><i class="fa fa-github" aria-hidden="true"></i> Log in with GitHub</button>
-
-@code {
-    public void SignInWithGitHub() {
-        navigationManager.NavigateTo("/.auth/login/github", forceLoad: true);
+<div class="container">
+    @foreach(var provider in providers)
+    {
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-lg-6">
+                    <a class="btn btn-block btn-lg btn-social btn-@provider.Key" href="/.auth/login/@provider.Key">
+                        <span class="fa fa-@provider.Key"></span> Sign in with @provider.Value
+                    </a>
+            </div>
+        </div>
     }
-}
+</div>
