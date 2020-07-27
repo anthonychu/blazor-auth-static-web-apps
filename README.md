@@ -93,7 +93,7 @@ For instance, in local development you can use a static file:
 }
 ```
 
-See [sample-data/me.json](sample/app/sample-data/me.json) for an example of the structure. For more information, check out the [Static Web Apps docs](https://docs.microsoft.com/en-us/azure/static-web-apps/user-information).
+See [sample-data/me.json](sample/app/wwwroot/sample-data/me.json) for an example of the structure. For more information, check out the [Static Web Apps docs](https://docs.microsoft.com/en-us/azure/static-web-apps/user-information).
 
 ## Sample app
 
