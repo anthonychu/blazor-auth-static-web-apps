@@ -1,5 +1,6 @@
 @page "/fetchdata"
 @inject HttpClient Http
+@inject IConfiguration Config
 @attribute [Authorize()]
 
 <h1>Weather forecast</h1>
@@ -40,7 +41,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        var url = Config.GetValue<string>("WeatherUrl", "/sample-data/weather.json");
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>(url);
     }
 
     public class WeatherForecast

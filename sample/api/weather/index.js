@@ -9,7 +9,5 @@ module.exports = async function (context, req) {
             "summary": conditions[Math.floor(Math.random() * conditions.length)]
         });
     }
-    context.res = {
-        body: weather
-    };
+    context.res.json(weather);
 }
