@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace StaticWebAppsAuthentication.Models
+namespace AzureStaticWebApps.Blazor.Authentication.Models
 {
     public class ClientPrincipal
     {

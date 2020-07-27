@@ -1,4 +1,4 @@
-namespace StaticWebAppsAuthentication.Models
+namespace AzureStaticWebApps.Blazor.Authentication.Models
 {
     public class AuthenticationData
     {

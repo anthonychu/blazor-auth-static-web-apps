@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
-using StaticWebAppsAuthentication.Models;
+using AzureStaticWebApps.Blazor.Authentication.Models;
 
-namespace StaticWebAppsAuthentication
+namespace AzureStaticWebApps.Blazor.Authentication
 {
     public class StaticWebAppsAuthenticationStateProvider : AuthenticationStateProvider
     {

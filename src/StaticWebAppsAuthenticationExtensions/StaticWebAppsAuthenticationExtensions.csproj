@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>AnthonyChu.AzureStaticWebApps.Blazor.Authentication</PackageId>
+    <Version>0.0.1-preview</Version>
+    <Authors>Anthony Chu</Authors>
+    <Company>Anthony Chu</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/anthonychu/blazor-auth-static-web-apps</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
