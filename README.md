@@ -7,7 +7,7 @@ Use Azure Static Web Apps authentication in Blazor WebAssembly apps.
 ### Install NuGet package
 
 ```bash
-dotnet add package AnthonyChu.AzureStaticWebApps.Blazor.Authentication --version 0.0.1-preview
+dotnet add package AnthonyChu.AzureStaticWebApps.Blazor.Authentication --version 0.0.2-preview
 ```
 
 ### Update Program.cs

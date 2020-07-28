@@ -30,6 +30,13 @@ namespace AzureStaticWebApps.Blazor.Authentication
                 var data = await http.GetFromJsonAsync<AuthenticationData>(authDataUrl);
 
                 var principal = data.ClientPrincipal;
+                principal.UserRoles = principal.UserRoles.Except(new string[] { "anonymous" }, StringComparer.CurrentCultureIgnoreCase);
+
+                if (!principal.UserRoles.Any())
+                {
+                    return new AuthenticationState(new ClaimsPrincipal());
+                }
+
                 var identity = new ClaimsIdentity(principal.IdentityProvider);
                 identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, principal.UserId));
                 identity.AddClaim(new Claim(ClaimTypes.Name, principal.UserDetails));

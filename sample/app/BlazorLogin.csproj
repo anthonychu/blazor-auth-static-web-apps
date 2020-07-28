@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AnthonyChu.AzureStaticWebApps.Blazor.Authentication" Version="0.0.1-preview" />
+    <PackageReference Include="AnthonyChu.AzureStaticWebApps.Blazor.Authentication" Version="0.0.2-preview" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="3.1.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>AnthonyChu.AzureStaticWebApps.Blazor.Authentication</PackageId>
-    <Version>0.0.1-preview</Version>
+    <Version>0.0.2-preview</Version>
     <Authors>Anthony Chu</Authors>
     <Company>Anthony Chu</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
