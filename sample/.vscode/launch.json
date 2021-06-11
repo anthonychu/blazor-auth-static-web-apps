@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "blazorwasm",
+            "name": "Launch and Debug Blazor WebAssembly Application",
+            "request": "launch",
+            "browser": "edge",
+            "cwd": "${workspaceFolder}/app",
+            "url": "http://localhost:5000/",
+            "postDebugTask": "Terminate All Tasks"
+        },
+        {
+            "name": "Attach to .NET Functions",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:azureFunctions.pickProcess}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Static Web App",
+            "configurations": [
+                "Attach to .NET Functions",
+                "Launch and Debug Blazor WebAssembly Application"
+            ],
+            "stopAll": true,
+            "preLaunchTask": "swa start"
+        }
+    ]
+}
