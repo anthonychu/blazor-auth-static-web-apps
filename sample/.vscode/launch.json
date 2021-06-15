@@ -6,12 +6,12 @@
     "configurations": [
         {
             "type": "blazorwasm",
-            "name": "Launch and Debug Blazor WebAssembly Application",
-            "request": "launch",
+            "name": "Debug Blazor WebAssembly Application",
+            "request": "attach",
             "browser": "edge",
             "cwd": "${workspaceFolder}/app",
-            "url": "http://localhost:5000/",
-            "postDebugTask": "Terminate All Tasks"
+            "url": "http://localhost:4280/",
+            // "postDebugTask": "Terminate All Tasks"
         },
         {
             "name": "Attach to .NET Functions",
@@ -25,7 +25,7 @@
             "name": "Launch Static Web App",
             "configurations": [
                 "Attach to .NET Functions",
-                "Launch and Debug Blazor WebAssembly Application"
+                "Debug Blazor WebAssembly Application"
             ],
             "stopAll": true,
             "preLaunchTask": "swa start"

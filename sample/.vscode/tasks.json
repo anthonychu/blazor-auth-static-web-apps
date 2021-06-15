@@ -80,7 +80,7 @@
         {
             "type": "shell",
             "label": "swa start",
-            "command": "swa start http://localhost:5000/ --api http://localhost:7071",
+            "command": "swa start http://localhost:5000/ --api http://localhost:7071 --run \"dotnet run\"",
             "isBackground": true,
             "problemMatcher": [
                 {
@@ -95,12 +95,12 @@
                     "background": {
                         "activeOnStart": true,
                         "beginsPattern": ".",
-                        "endsPattern": "SWA listening on",
+                        "endsPattern": "Waiting for .+7071 to be ready",
                     }
                 }
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}/app"
             },
             "dependsOn": [
             ]
