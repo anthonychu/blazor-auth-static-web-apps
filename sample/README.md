@@ -8,3 +8,5 @@ cd sample
 cp api/local.settings.sample.json api/local.settings.json
 cd app
 swa start http://localhost:5000 --api ../api --run "dotnet run"
+
+Browse to `http://localhost:4280`.
